@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{E7930C45-F250-4D09-9AAA-A488A5DBFFEB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Game1.cs">
+    <Files>
+      <File FileName="Game1.cs" Line="282" Column="27" />
+      <File FileName="Camera.cs" Line="30" Column="1" />
+      <File FileName="Program.cs" Line="23" Column="1" />
+      <File FileName="Cell.cs" Line="22" Column="1" />
+      <File FileName="Heart.cs" Line="118" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TheWalkingFred PreferredExecutionTarget="Test1" />
+  <MultiItemStartupConfigurations />
+</Properties>

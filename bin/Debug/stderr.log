@@ -1,0 +1,45 @@
+objc[23495]: Class VCWeakObjectHolder is implemented in both /System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/Versions/A/ViceroyTrace (0xa665a090) and /System/Library/PrivateFrameworks/AVConference.framework/Versions/A/AVConference (0xa6670ea4). One of the two will be used. Which one is undefined.
+2017-05-09 00:14:04.850 TheWalkingFred[23495:4057058] 
+Unhandled Exception:
+Microsoft.Xna.Framework.Content.ContentLoadException: The content file was not found. ---> System.IO.FileNotFoundException: Content/wall.xnb ---> System.IO.DirectoryNotFoundException: Could not find a part of the path "/Users/johnchandlerphillips/Projects/TheWalkingFred/bin/Debug/TheWalkingFred.app/Contents/Resources/Content/wall.xnb".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x001c6] in /private/tmp/source-mono-4.8.0/bockbuild-mono-4.8.0-branch/profiles/mono-mac-xamarin/build-root/mono-x86/mcs/class/corlib/System.IO/FileStream.cs:225 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in /private/tmp/source-mono-4.8.0/bockbuild-mono-4.8.0-branch/profiles/mono-mac-xamarin/build-root/mono-x86/mcs/class/corlib/System.IO/FileStream.cs:91 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.OpenRead (System.String path) [0x00000] in /private/tmp/source-mono-4.8.0/bockbuild-mono-4.8.0-branch/profiles/mono-mac-xamarin/build-root/mono-x86/mcs/class/corlib/System.IO/File.cs:350 
+  at Microsoft.Xna.Framework.TitleContainer.PlatformOpenStream (System.String safeName) [0x0000c] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.TitleContainer.OpenStream (System.String name) [0x00034] in <a6b5c1686196475aa75b8dde7820e259>:0 
+   --- End of inner exception stack trace ---
+  at Microsoft.Xna.Framework.TitleContainer.OpenStream (System.String name) [0x00059] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Content.ContentManager.OpenStream (System.String assetName) [0x0002e] in <a6b5c1686196475aa75b8dde7820e259>:0 
+   --- End of inner exception stack trace ---
+  at Microsoft.Xna.Framework.Content.ContentManager.OpenStream (System.String assetName) [0x00046] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Content.ContentManager.ReadAsset[T] (System.String assetName, System.Action`1[T] recordDisposableObject) [0x00071] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Content.ContentManager.Load[T] (System.String assetName) [0x00068] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at TheWalkingFred.Game1.LoadContent () [0x0001e] in /Users/johnchandlerphillips/Projects/TheWalkingFred/Game1.cs:272 
+  at Microsoft.Xna.Framework.Game.Initialize () [0x0004d] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at TheWalkingFred.Game1.Initialize () [0x00002] in /Users/johnchandlerphillips/Projects/TheWalkingFred/Game1.cs:255 
+  at Microsoft.Xna.Framework.Game.DoInitialize () [0x00032] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Game.Run (Microsoft.Xna.Framework.GameRunBehavior runBehavior) [0x00033] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Game.Run () [0x0000c] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at TheWalkingFred.Program.Main (System.String[] args) [0x0000e] in /Users/johnchandlerphillips/Projects/TheWalkingFred/Main.cs:23 
+[ERROR] FATAL UNHANDLED EXCEPTION: Microsoft.Xna.Framework.Content.ContentLoadException: The content file was not found. ---> System.IO.FileNotFoundException: Content/wall.xnb ---> System.IO.DirectoryNotFoundException: Could not find a part of the path "/Users/johnchandlerphillips/Projects/TheWalkingFred/bin/Debug/TheWalkingFred.app/Contents/Resources/Content/wall.xnb".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x001c6] in /private/tmp/source-mono-4.8.0/bockbuild-mono-4.8.0-branch/profiles/mono-mac-xamarin/build-root/mono-x86/mcs/class/corlib/System.IO/FileStream.cs:225 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in /private/tmp/source-mono-4.8.0/bockbuild-mono-4.8.0-branch/profiles/mono-mac-xamarin/build-root/mono-x86/mcs/class/corlib/System.IO/FileStream.cs:91 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream:.ctor (string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.OpenRead (System.String path) [0x00000] in /private/tmp/source-mono-4.8.0/bockbuild-mono-4.8.0-branch/profiles/mono-mac-xamarin/build-root/mono-x86/mcs/class/corlib/System.IO/File.cs:350 
+  at Microsoft.Xna.Framework.TitleContainer.PlatformOpenStream (System.String safeName) [0x0000c] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.TitleContainer.OpenStream (System.String name) [0x00034] in <a6b5c1686196475aa75b8dde7820e259>:0 
+   --- End of inner exception stack trace ---
+  at Microsoft.Xna.Framework.TitleContainer.OpenStream (System.String name) [0x00059] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Content.ContentManager.OpenStream (System.String assetName) [0x0002e] in <a6b5c1686196475aa75b8dde7820e259>:0 
+   --- End of inner exception stack trace ---
+  at Microsoft.Xna.Framework.Content.ContentManager.OpenStream (System.String assetName) [0x00046] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Content.ContentManager.ReadAsset[T] (System.String assetName, System.Action`1[T] recordDisposableObject) [0x00071] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Content.ContentManager.Load[T] (System.String assetName) [0x00068] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at TheWalkingFred.Game1.LoadContent () [0x0001e] in /Users/johnchandlerphillips/Projects/TheWalkingFred/Game1.cs:272 
+  at Microsoft.Xna.Framework.Game.Initialize () [0x0004d] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at TheWalkingFred.Game1.Initialize () [0x00002] in /Users/johnchandlerphillips/Projects/TheWalkingFred/Game1.cs:255 
+  at Microsoft.Xna.Framework.Game.DoInitialize () [0x00032] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Game.Run (Microsoft.Xna.Framework.GameRunBehavior runBehavior) [0x00033] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at Microsoft.Xna.Framework.Game.Run () [0x0000c] in <a6b5c1686196475aa75b8dde7820e259>:0 
+  at TheWalkingFred.Program.Main (System.String[] args) [0x0000e] in /Users/johnchandlerphillips/Projects/TheWalkingFred/Main.cs:23 
